@@ -1,0 +1,40 @@
+.parrafo{
+    border: 1px solid #283e06;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color:#02253d ;
+    font-size: larger;
+    font-weight: 500;
+}
+div{
+    border: 2px solid #283e06;
+    color: #02253d;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 15px;
+
+}
+span ul li{
+    color: #02253d;
+    font-style: oblique;
+    font-weight: 700;
+}
+#boton{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    font-size: 30px;
+    width: 500px;
+    padding: 20px;
+    color: green;
+}
+#texto{
+    color: aliceblue;
+
+}
+#.link{
+    color: blue;
+}
+#a:hover{
+    color: chocolate;
+}
