@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final parcial #3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h3>SELECT * FROM alumno;</h3>
+                <p>Consulta #1. obtener el listado de todos los alumnos de la facultad.</p>
+                <img src="consulta1.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h3>SELECT curso.nombreDescriptivo,asignatura.nombre <br>
+                    FROM curso <br>
+                    INNER JOIN asignatura <br>
+                    ON curso.idCurso = asignatura.curso</h3>
+                <p>Consulta #2. Obtener el listado de los cursos (nombres) y su asignatura correspondiente.</p>
+                <img src="consulta2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h3>SELECT alumno.nombre, alumno.apellido1, alumno.apellido2 <br>
+                    FROM alumno <br>
+                    WHERE alumno.beca='si';</h3>
+                <p>Consulta #3. Obtener listado (nombre y apellido) de alumnos que tienen beca.</p>
+                <img src="consulta3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h3>SELECT profesor.nombre, profesor.apellido1, profesor.apellido2, tlfcontactoprof.telefono <br>
+                    FROM profesor <br>
+                    INNER JOIN tlfcontactoprof <br>
+                    ON profesor.idProfesor= tlfcontactoprof.idProfesor;</h3>
+                <p>Consulta #4. Obtener listado de profesores (nombre, apellido y su numero de contacto.)</p>
+                <img src="consulta4.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col">
+                <h3>SELECT alumno.* <br>
+                    FROM alumno <br>
+                    INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno <br>
+                    INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura <br>
+                    WHERE asignatura.nombre = "Programacion" <br>
+                    </h3>
+                <p>Consulta #5. Obtener listado de alumnos (todos los campos) que estan inscritos a la signatura d programacion. </p>
+                <img src="consulta5.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
