@@ -3,13 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica #4 manejo de imagenes en HTML</title>
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <h1>Manejo de imagenes en HTML</h1>
-    <img src="car-6619311_1280.jpg" alt="" width="20%">
-    <h2 style="color: blue;">Angel Saul Rojo Lopez</h2>
-    <h3 style="color: brown;">26/02/24</h3><br>
-    
+    <div class="container">
+        <form action="practica4s.php" method="POST">
+            <div class="row">
+                <h1>Exámen de programación</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            1. ¿Cuántos carros hay en circulación en el mundo?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="Más de 10 millones de carros" required> Más de 10 millones de carros </p>
+                            <p><input type="radio" name="pregunta1" value="Más de 100 millones de carros" required> Más de 100 millones de carros </p>
+                            <p><input type="radio" name="pregunta1" value="Más de 1000 millones de carros" required> Más de 1000 millones de carros </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es el nombre de la escultura de los Rolls Roys.
+                        </p>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. ¿Cuáles son los 2 carros más vendidos de la historia? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="Ford F" > Ford F </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Volkswagen Passat" > Volkswagen Passat </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Toyota Corolla" > Toyota Corolla </p>
+                        </div>
+                    </div>
+
+                    <div class="card-header">
+                        4. ¿Cómo se llamó originalmente la marca automovilística Jaguar?
+                    </div>
+                    <div class="card-body">
+                        <p><input type="radio" name="pregunta1" value=" SS Cars" required> SS Cars </p>////
+                        <p><input type="radio" name="pregunta1" value="Panther Motor Company" required> Panther Motor Company </p>
+                        <p><input type="radio" name="pregunta1" value=" Standard Motor Cars" required>  Standard Motor Cars </p>
+                    </div>
+
+                    <div class="card p-4 mb-4"></div>
+                        <p>
+                            5. <input type="text" name="pregunta5" required> es la mayor fabricante de carros del mundo.
+                        </p>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                            6. ¿A quién pertenece la marca de carros SEAT?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="Aston martin" required> Aston martin </p>
+                            <p><input type="radio" name="pregunta1" value="BMW" required> BMW </p>
+                            <p><input type="radio" name="pregunta1" value="Volkswagen" required> Volkswagen </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4"></div>
+                        <p>
+                            7. <input type="text" name="pregunta5" required> es la fábrica dueña del automovil Mini.
+                        </p>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                            8. ¿Qué carro tiene un precio por encima de 4 millones de euros? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="Bugatti Mistral" > Bugatti Mistral </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Pagani Huayra Codalunga" > Pagani Huayra Codalunga </p>
+                            <p><input type="checkbox" name="pregunta3[]" value=" Bentley Batur" >  Bentley Batur </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                            9. ¿De qué nacionalidad son los carros Hyundai?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="Sur coreana" required> Sur coreana </p>
+                            <p><input type="radio" name="pregunta1" value="Alemana" required> Alemana </p>
+                            <p><input type="radio" name="pregunta1" value="Japonesa" required> Japonesa </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                            10. ¿Cuál es el carro más rápido del mundo?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="Hennessey Venom F5" required> Hennessey Venom F5 </p>
+                            <p><input type="radio" name="pregunta1" value="Koenigsegg Jesko Absolut" required> Koenigsegg Jesko Absolut </p>
+                            <p><input type="radio" name="pregunta1" value="Bugatti Chiron Super Sport 300+" required> Bugatti Chiron Super Sport 300+ </p>
+                        </div>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
 </body>
 </html>

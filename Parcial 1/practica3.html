@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica #3.Elementos HTML y proiedades CSS </title>
+    <title>Juego del GATO</title>
 </head>
 <body>
-    <h1>Elementos HTML y propiedades CSS</h1>
-    <div style="background-color: aqua; border: 1px solid blue;margin: 50px; padding: 20px " >
-    DIV con propiedades CSS
-    </div>
-    <div style="margin: top 60px;background-color: blueviolet;border: 1px solid burlywood ;border-radius: 15px;"">
-     Segundo DIV    
-    </div>
-     <br><div style="background-color: green;border-radius: red 1px solid;">
-        Angel Saul Rojo Lopez 
-    </Div><br>
-     <br><div style="position: fixed; color: red;">
-    Practica #3 20/02/24
-    </div><br>
+    <h1>Juego del GATO</h1><hr>
+    <form action="practica3.php" method="POST">
+        <label for="">Jugador 1 (X): </label><input type="text" name="jugador1" value="Pedro" required>
+        <label for="">Jugador 2 (O): </label><input type="text" name="jugador2" value="Pablo" required><br><br>
+
+        <input type="text" name="gato[]" value="X" required>
+        <input type="text" name="gato[]" value="O" required>
+        <input type="text" name="gato[]" value="X" required><br>
+
+        <input type="text" name="gato[]" value="X" required>
+        <input type="text" name="gato[]" value="O" required>
+        <input type="text" name="gato[]" value="O" required><br>
+
+        <input type="text" name="gato[]" value="X" required>
+        <input type="text" name="gato[]" value="X" required>
+        <input type="text" name="gato[]" value="O" required>
+
+        <input type="submit" value="Jugar">
+    </form>
+
 </body>
 </html>
